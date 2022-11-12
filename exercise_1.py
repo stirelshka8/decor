@@ -13,6 +13,7 @@ def logger(old_function):
         logging.info(f'Запущена функция {old_function.__name__}')
         logging.info(f'Аргументы запущенной функциии. ARGS -  {args}, KWARGS -  {kwargs}')
         logging.info(f'Результат работы функции - {ret}')
+        logging.info(f' ========================= КОНЕЦ ============================')
 
         return ret
 
